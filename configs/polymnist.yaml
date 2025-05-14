@@ -1,0 +1,71 @@
+# general setting.
+views: 5
+seed: 3407
+wandb: false
+experiment_name: "polymnist"
+verbose: false
+note: 'disentangling'
+project_name: 'CVPR24'
+runtimes: 1
+backbone:
+  type: 'cnn'
+  init_method: 'xavier'
+dataset:
+  name: 'PolyMnist'
+  root: 'MyData/PolyMNIST'
+  class_num: 10
+train:
+  epochs: 200
+  # 64, 128, 512, 1024
+  devices: [0]
+  batch_size: 512
+  optim: "adamw"
+  num_workers: 8
+  lr: 0.0001
+  evaluate: 1
+  use_ddp: false
+  scheduler: 'consine'
+  samples_num: 8
+  resume: false
+  masked_ratio: 0.7
+  mask_patch_size: 2
+  mask_view: true
+  mask_view_ratio: 0.3
+
+
+consistency:
+  continous: True
+  c_dim: 10
+  in_channel: 3
+  ch_mult: [1, 2, 4]
+  block_size: 8
+  basic_hidden_dim: 16
+  latent_ch: 8
+  num_res_blocks: 3
+  kld_weight: 1.0
+  alpha: 1.0
+  temperature: 0.5
+
+
+vspecific:
+  in_channel: 3
+  v_dim: 10
+  ch_mult: [1, 2, 4]
+  block_size: 8
+  basic_hidden_dim: 16
+  latent_ch: 8
+  num_res_blocks: 3
+  best_view: 0
+  kld_weight: 0.5
+
+
+disent:
+  hidden_size: 100
+  alpha: 0.05
+  mi_w: 0.01
+
+valid_augmentation:
+  crop_size: 32
+
+eval:
+  model_path: ''
