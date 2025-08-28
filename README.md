@@ -14,9 +14,7 @@ Most existing multi-view representation learning methods assume view-completenes
 
 ## Data preparation
 
-Before running experiments for 4 datasets, you can find raw datasets: Google Drive
-
-All datasets should be organized as:
+Before running experiments, your datasets should be organized as:
 
 ```
 DualVAE 
@@ -49,6 +47,8 @@ Then run the command:
 python eval.py -f [config file]
 ```
 
+Our pretrained models on four datasets are available at  [Google Drive](https://drive.google.com/drive/folders/1npR7RgA3-7Hg8pkVVn7PRds0Xy9CHBm5?usp=sharing)
+
 ## Environment
 
 - pytorch == 2.3.1
@@ -61,4 +61,16 @@ python eval.py -f [config file]
 - munkres == 1.1.4
 
 ## Cite
+
+```
+To be updated...
+```
+
+
+
+## Acknowledgements
+
+- The codes are based on [MRDD]([Guanzhou-Ke/MRDD: The official repos of "Rethinking Multi-view Representation Learning via Distilled Disentangling"](https://github.com/Guanzhou-Ke/MRDD)). Thanks to the authors for their codes!
+
+
 

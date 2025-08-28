@@ -5,7 +5,7 @@ wandb: false
 experiment_name: "polymnist"
 verbose: false
 note: 'disentangling'
-project_name: 'CVPR24'
+project_name: 'IJCAI25'
 runtimes: 1
 backbone:
   type: 'cnn'

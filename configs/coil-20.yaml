@@ -1,11 +1,11 @@
 # general setting.
 views: 3
 seed: 3407
-wandb: true
+wandb: false
 experiment_name: "coil20"
 verbose: false
 note: 'disentangling'
-project_name: 'CVPR24'
+project_name: 'IJCAI25'
 runtimes: 1
 backbone:
   type: 'cnn'
@@ -15,7 +15,7 @@ dataset:
   root: 'MyData'
   class_num: 20
 train:
-  epochs: 100
+  epochs: 200
   # 64, 128, 512, 1024
   devices: [0]
   batch_size: 49
