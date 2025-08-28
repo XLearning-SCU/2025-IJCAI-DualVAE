@@ -70,7 +70,7 @@ To be updated...
 
 ## Acknowledgements
 
-- The codes are based on [MRDD]([Guanzhou-Ke/MRDD: The official repos of "Rethinking Multi-view Representation Learning via Distilled Disentangling"](https://github.com/Guanzhou-Ke/MRDD)). Thanks to the authors for their codes!
+- The codes are based on [MRDD](https://github.com/Guanzhou-Ke/MRDD). Thanks to the authors for their codes!
 
 
 
