@@ -16,7 +16,6 @@ dataset:
   class_num: 20
 train:
   epochs: 200
-  # 64, 128, 512, 1024
   devices: [0]
   batch_size: 49
   optim: "adamw"
